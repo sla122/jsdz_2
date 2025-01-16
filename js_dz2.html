@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    const text = "  JavaScript — это удивительный язык программирования! Он используется для создания сайтов, мобильных приложений и многого другого.  ";
+    console.log(text);
+    // 1. Удалите лишние пробелы в начале и в конце строки.
+    const trimmedText = text.trim();
+    console.log(trimmedText);
+
+    // 2. Преобразуйте всю строку в верхний регистр.
+    const upperCaseText = trimmedText.toUpperCase();
+    console.log(upperCaseText);
+
+    // 3. Преобразуйте всю строку в нижний регистр.
+    const lowerCaseText = trimmedText.toLowerCase();
+    console.log(lowerCaseText);
+
+    // 4. Найдите индекс первого упоминания слова "язык".
+    const firstIndexOfWord = trimmedText.indexOf("язык");
+    console.log(firstIndexOfWord);
+
+    // 5. Найдите индекс последнего упоминания буквы "о".
+    const lastIndexOfLetter = trimmedText.lastIndexOf("о");
+    console.log(lastIndexOfLetter);
+
+    // 6. Извлеките из строки только первое предложение.
+    const firstSentence = trimmedText.split(".")[0] + "!";
+    console.log(firstSentence);
+
+    // 7. Разделите строку на массив предложений.
+    const sentencesArray = trimmedText.split(".");
+    console.log(sentencesArray);
+
+    // 8. Посчитайте количество слов в строке.
+    const wordCount = trimmedText.split(" ").filter(word => word !== "").length;
+    console.log(wordCount);
+
+    // 9. Замените слово "удивительный" на "потрясающий".
+    const replacedWordText = trimmedText.replace("удивительный", "потрясающий");
+    console.log(replacedWordText);
+
+    // 10. Проверьте, начинается ли строка с "JavaScript".
+    const startsWithJavaScript = trimmedText.startsWith("JavaScript");
+    console.log(startsWithJavaScript);
+
+    // 11. Проверьте, заканчивается ли строка словом "другого.".
+    const endsWithWord = trimmedText.endsWith("другого.");
+    console.log(endsWithWord);
+
+    // 12. Извлеките из строки все символы с 20 по 40 (включительно).
+    const substringText = trimmedText.slice(20, 41);
+    console.log(substringText);
+
+    // 13. Создайте сокращённую версию строки.
+    const shortText = trimmedText.length > 60 ? trimmedText.slice(0, 60) + "..." : trimmedText;
+    console.log(shortText);
+
+    // 14. Разделите строку на массив слов и отсортируйте их по алфавиту.
+    const sortedWordsArray = trimmedText.split(" ").filter(word => word !== "").sort();
+    console.log(sortedWordsArray);
+
+    // 15. Удалите все восклицательные знаки из строки.
+    const textWithoutExclamations = trimmedText.replace("!", "");
+    console.log(textWithoutExclamations);
+</script>
+</body>
+</html>
